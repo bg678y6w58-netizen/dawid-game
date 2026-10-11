@@ -1,12 +1,12 @@
-<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#355d93"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Síl·labes"><link rel="apple-touch-icon" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest"><title>Les síl·labes d'en Dawid · v5</title><style>
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#355d93"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Síl·labes"><link rel="apple-touch-icon" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest"><title>Les síl·labes d'en Dawid · v6</title><style>
 :root{font-family:system-ui,-apple-system,sans-serif;color:#182940;background:#f5f7fb}*{box-sizing:border-box}body{margin:0}main{max-width:760px;margin:auto;padding:16px 14px 38px}header{display:flex;justify-content:space-between;align-items:center;gap:10px}h1{font-size:clamp(1.3rem,4vw,1.9rem);margin:10px 0}button,select{font:inherit}button{border:0;border-radius:15px;min-height:49px;padding:10px 15px;background:#355d93;color:#fff;font-weight:700;cursor:pointer;touch-action:manipulation}button:disabled{opacity:.5}.outline{color:#213c64;background:#e8edf6}.panel{background:#fff;border:1px solid #e1e8f0;border-radius:22px;padding:17px;margin-top:14px;box-shadow:0 4px 18px #243c5a0c}.small{font-size:.88rem;color:#54657b;line-height:1.5}.pill{font-weight:750;border-radius:20px;padding:7px 12px;background:#e6eefb;font-size:.9rem;white-space:nowrap}.choices{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.choices button{font-size:.89rem;padding:8px 6px}.choices button[aria-pressed=true]{background:#213b60}.choices button[aria-pressed=false]{background:#e8edf6;color:#213c64}.settings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.settings label{font-weight:600;font-size:.85rem;display:block;margin-bottom:5px}.settings select{width:100%;min-height:44px;border:1px solid #b9c9dc;border-radius:11px;padding:7px;background:white;font-size:1rem;color:#182940}
 .stage{border-radius:18px;transition:background .25s,box-shadow .25s;padding:4px 0}.stage.ok{background:#e3f6ec;box-shadow:inset 0 0 0 3px #2f9e68}.stage.no{background:#fde8e8;box-shadow:inset 0 0 0 3px #d64545}.stage.again{background:#fff4dc;box-shadow:inset 0 0 0 3px #e0a21b}.stage.listen{box-shadow:inset 0 0 0 3px #7aa3dd}
 .word{font-size:clamp(3.7rem,15vw,7rem);font-weight:850;text-align:center;letter-spacing:.035em;min-height:148px;display:grid;place-items:center;word-break:break-word;line-height:1.05;padding:0 8px}.timebar{height:8px;margin:0 18px;border-radius:8px;background:#edf1f7;overflow:hidden;visibility:hidden}.timebar.on{visibility:visible}#timefill{height:100%;width:100%;background:#7aa3dd}
 .feedback{font-size:4.4rem;min-height:80px;line-height:80px;text-align:center}.status{min-height:56px;text-align:center;font-weight:700;font-size:1.15rem;padding:0 6px}.status small{display:block;color:#627187;font-weight:400;font-size:.8rem;margin-top:5px;word-break:break-word}
-.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.primary{grid-column:1/-1;min-height:70px;font-size:1.3rem;background:#26725a}.primary.on{background:#b4412f}.bar{height:10px;border-radius:10px;background:#e9eef5;overflow:hidden;margin:10px 0}.fill{height:100%;background:#4e9576;transition:width .2s}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.fallback{border-top:1px solid #e6edf4;margin-top:15px;padding-top:12px}.fallback button{min-height:52px;font-size:1.05rem}.okbtn{background:#2f9e68}.kobtn{background:#d64545}.notice{background:#fff3d8;border-radius:12px;padding:10px 12px;font-size:.85rem;color:#634711;margin-top:8px}.heard{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:#54657b;text-align:center;margin:10px 0 0;word-break:break-word}.hidden{display:none!important}@media(max-width:390px){.choices button{font-size:.78rem}.panel{padding:13px}.settings{gap:9px}}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}.primary{grid-column:1/-1;min-height:70px;font-size:1.3rem;background:#26725a}.primary.on{background:#b4412f}.bar{height:10px;border-radius:10px;background:#e9eef5;overflow:hidden;margin:10px 0}.fill{height:100%;background:#4e9576;transition:width .2s}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.fallback{border-top:1px solid #e6edf4;margin-top:15px;padding-top:12px}.fallback button{min-height:52px;font-size:1.05rem}.okbtn{background:#2f9e68}.kobtn{background:#d64545}.notice{background:#fff3d8;border-radius:12px;padding:10px 12px;font-size:.85rem;color:#634711;margin-top:8px}.heard{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:#54657b;text-align:center;margin:10px 0 0;word-break:break-word}.diag{margin-top:10px;font-size:.8rem;color:#54657b}.diag summary{cursor:pointer}.diag pre{white-space:pre-wrap;background:#f3f6fa;border-radius:10px;padding:8px;font-size:.75rem;max-height:220px;overflow:auto}.hidden{display:none!important}@media(max-width:390px){.choices button{font-size:.78rem}.panel{padding:13px}.settings{gap:9px}}
 </style></head><body><main>
 <header><h1>🌟 Les síl·labes d'en Dawid</h1><span id="stars" class="pill">⭐ 0</span></header>
-<p class="small">Llegeix sense lletrejar! · Czytaj całymi sylabami. <strong>v5</strong></p>
+<p class="small">Llegeix sense lletrejar! · Czytaj całymi sylabami. <strong>v6</strong></p>
 
 <section class="panel"><div class="row"><strong>1. Tria un exercici · Wybierz ćwiczenie</strong></div>
 <div class="choices" id="modes"><button data-mode="syll" aria-pressed="true">Síl·labes</button><button data-mode="words" aria-pressed="false">Paraules</button><button data-mode="phrases" aria-pressed="false">Frases</button></div>
@@ -25,6 +25,7 @@
 <div class="actions"><button id="start" class="primary">🎤 Escolta · Słuchaj</button><button id="repeat" class="outline">↻ Repetir</button><button id="next" class="outline">▶ Següent</button></div>
 <p class="heard" id="heard">Escoltat: —</p>
 <div id="warning" class="notice hidden" role="status"></div>
+<details class="diag"><summary>🔧 Diagnòstic</summary><pre id="log">—</pre></details>
 <div class="fallback"><p class="small">Pare/mare: si el micro s'equivoca, decidiu vosaltres. · Rodzic może ocenić ręcznie. Gdy mikrofon nic nie usłyszy, to <b>nigdy nie jest błąd</b> Dawidka.</p><div class="actions"><button id="manualyes" class="okbtn">✓ Correcte</button><button id="manualno" class="kobtn">✗ Incorrecte</button></div></div>
 <div class="row" style="margin-top:13px"><button id="restart" class="outline">↺ Nova ronda</button><button id="mute" class="outline">🔊 So: activat</button></div></section>
 
@@ -160,55 +161,85 @@ const autoMic=()=>!!Speech&&userStarted&&$('automic').value==='1';
 const recogLang=()=>{const v=$('lang').value;if(v!=='auto')return v;return (mode==='syll'||caBroken)?'es-ES':'ca-ES'};
 const PERM_MSG='El micro o el reconeixement estan bloquejats. A l\'iPad: Ajustes › Safari › Micrófono = Permitir, i Ajustes › General › Teclado › Activar Dictado. Obre el joc a Safari. · Włącz mikrofon i Dyktowanie w Ustawieniach.';
 
-/* ---------------- Listening engine ---------------- */
-function clearTimers(){clearTimeout(deadlineT);clearTimeout(settleT);clearTimeout(restartT);deadlineT=settleT=restartT=null;timebar(0)}
-function stopListening(){attemptId++;decided=true;clearTimers();if(rec){const r=rec;rec=null;try{r.abort()}catch{}}micBtn(false);if($('stage').classList.contains('listen'))stage('')}
+/* ---------------- Listening engine ----------------
+   iPad sends audio to Apple and the text comes back with a delay (1-4 s).
+   So: the answer clock starts only when the mic is really on, and when time
+   is up we STOP (not abort) the mic and wait for the late text before judging. */
+const GRACE_MS=4000;
+let phase='idle',speechSeen=false,graceT=null,startFallbackT=null,t0=0,logLines=[];
+function log(m){const t=((performance.now()-t0)/1000).toFixed(1);logLines.push(t+'s  '+m);if(logLines.length>30)logLines.shift();const el=$('log');if(el)el.textContent=logLines.join('\n')}
+function clearTimers(){[deadlineT,settleT,restartT,graceT,startFallbackT].forEach(clearTimeout);deadlineT=settleT=restartT=graceT=startFallbackT=null;timebar(0)}
+function stopListening(){attemptId++;decided=true;phase='idle';clearTimers();if(rec){const r=rec;rec=null;try{r.abort()}catch{}}micBtn(false);if($('stage').classList.contains('listen'))stage('')}
 function listen(){
   if(ended||locked)return;
   if(!Speech){showWarning('Aquest navegador no té reconeixement de veu. Obre l\'enllaç directament a Safari (no des de la icona). Mentrestant, feu servir ✓ / ✗. · Otwórz w Safari.');return}
   stopListening();
-  const id=++attemptId;decided=false;heard=[];restarts=0;
+  const id=++attemptId;decided=false;heard=[];restarts=0;phase='listening';speechSeen=false;t0=performance.now();logLines=[];log('▶ '+queue[pos]+'  ('+recogLang()+', '+$('strict').value+')');
   $('feedback').textContent='';$('heard').textContent='Escoltat: —';stage('listen');micBtn(true);
   setStatus('🎤 Escolto… · Słucham',attempt>1?`Intent ${attempt}/${MAX_ATTEMPTS} · Llegeix en veu alta`:'Llegeix en veu alta · Przeczytaj na głos');
-  const sec=+$('answer').value;
-  if(sec>0){deadlineT=setTimeout(()=>{if(id===attemptId&&!decided)conclude()},sec*1000);timebar(sec)}
+  startFallbackT=setTimeout(()=>startClock(id),1500);   // in case 'start' event never comes
   spawn(id);
 }
+function startClock(id){
+  if(id!==attemptId||decided||deadlineT||phase!=='listening')return;
+  clearTimeout(startFallbackT);
+  const sec=+$('answer').value;
+  if(sec>0){deadlineT=setTimeout(()=>{log('⏱ temps');finishWindow(id)},sec*1000);timebar(sec)}
+}
+function finishWindow(id){            // time is up: wait for late text before judging
+  if(id!==attemptId||decided||phase==='finishing')return;
+  phase='finishing';clearTimeout(settleT);clearTimeout(restartT);timebar(0);
+  setStatus('⏳ Un moment… · Chwileczkę','Estic entenent · Sprawdzam');
+  if(speechSeen&&!heard.length){                     // voice heard, text still on its way: keep mic open
+    log('esperant text…');
+    graceT=setTimeout(()=>{if(rec){try{rec.stop()}catch{}}graceT=setTimeout(conclude,1500)},GRACE_MS);
+  }else{
+    if(rec){try{rec.stop()}catch{}}
+    graceT=setTimeout(conclude,heard.length?1800:1200);
+  }
+}
 function spawn(id){
-  if(id!==attemptId||decided)return;
+  if(id!==attemptId||decided||phase!=='listening')return;
   let r;try{r=new Speech()}catch{showWarning(PERM_MSG);result('none');return}
   const lang=recogLang();
   r.lang=lang;r.continuous=true;r.interimResults=true;r.maxAlternatives=5;rec=r;
+  r.onstart=()=>{if(id!==attemptId)return;log('micro on');startClock(id)};
+  r.onspeechstart=r.onsoundstart=()=>{if(id===attemptId&&!speechSeen){speechSeen=true;log('veu detectada')}};
   r.onresult=e=>{
     if(id!==attemptId||decided)return;
-    let full='';const before=heard.length;
-    for(let i=0;i<e.results.length;i++){const res=e.results[i];full+=' '+res[0].transcript;for(let j=0;j<res.length;j++){const t=(res[j].transcript||'').trim();if(t&&!heard.includes(t))heard.push(t)}}
+    let full='',fin=false;const before=heard.length;
+    for(let i=0;i<e.results.length;i++){const res=e.results[i];if(res.isFinal)fin=true;full+=' '+((res[0]&&res[0].transcript)||'');for(let j=0;j<res.length;j++){const t=((res[j]&&res[j].transcript)||'').trim();if(t&&!heard.includes(t))heard.push(t)}}
     full=full.trim();if(full&&!heard.includes(full))heard.push(full);
     if(heard.length>60)heard=heard.slice(-60);
     $('heard').textContent=`Escoltat: ${full||'—'}  ·  ${lang}`;
-    if(judge(queue[pos],heard,$('strict').value)){result('ok');return}
-    if(heard.length>before||!settleT){clearTimeout(settleT);settleT=setTimeout(()=>{if(id===attemptId&&!decided)conclude()},SETTLE_MS)}
+    let ok=false;try{ok=judge(queue[pos],heard,$('strict').value)}catch(err){log('error judge '+err.message)}
+    log(`text "${full}"${fin?' (final)':''} → ${ok?'✓':'no'}`);
+    if(ok){result('ok');return}
+    if(phase==='finishing'){clearTimeout(graceT);graceT=setTimeout(conclude,fin?600:1500);return}
+    if(heard.length>before){clearTimeout(settleT);settleT=setTimeout(()=>{log('silenci');finishWindow(id)},SETTLE_MS)}
   };
   r.onerror=e=>{
-    if(id!==attemptId)return;const c=e.error||'';
+    if(id!==attemptId)return;const c=e.error||'';log('error '+c);
     if(c==='language-not-supported'&&lang!=='es-ES'){caBroken=true;return}            // retry in Spanish on 'end'
-    if(c==='not-allowed'||c==='service-not-allowed'){showWarning(PERM_MSG);decided=true;clearTimers();rec=null;micBtn(false);stage('');setStatus('Micro bloquejat · Mikrofon zablokowany','Feu servir ✓ / ✗ de sota.');return}
+    if(c==='not-allowed'||c==='service-not-allowed'){showWarning(PERM_MSG);decided=true;phase='idle';clearTimers();rec=null;micBtn(false);stage('');setStatus('Micro bloquejat · Mikrofon zablokowany','Feu servir ✓ / ✗ de sota.');return}
     if(c==='network')showWarning('El reconeixement necessita Internet. · Rozpoznawanie wymaga internetu.');
     if(c==='audio-capture')showWarning('No es troba el micròfon. · Brak mikrofonu.');
   };
   r.onend=()=>{
     if(rec===r)rec=null;
     if(id!==attemptId||decided)return;
-    if(++restarts>30){conclude();return}
-    restartT=setTimeout(()=>spawn(id),180);     // Safari stops early: keep listening until time is up
+    log('micro off');
+    if(phase==='finishing'){if(heard.length){clearTimeout(graceT);graceT=setTimeout(conclude,500)}return}
+    if(++restarts>30){finishWindow(id);return}
+    restartT=setTimeout(()=>spawn(id),150);     // Safari stops early: keep listening until time is up
   };
-  try{r.start()}catch{if(rec===r)rec=null;if(++restarts>30){conclude();return}restartT=setTimeout(()=>spawn(id),500)}
+  try{r.start()}catch(err){log('start fail');if(rec===r)rec=null;if(++restarts>30){finishWindow(id);return}restartT=setTimeout(()=>spawn(id),500)}
 }
-function conclude(){if(decided)return;if(judge(queue[pos],heard,$('strict').value))result('ok');else result(heard.length?'no':'none')}
+function conclude(){if(decided)return;let ok=false;try{ok=judge(queue[pos],heard,$('strict').value)}catch{}log('resultat: '+(ok?'✓':heard.length?'✗':'res'));if(ok)result('ok');else result(heard.length?'no':'none')}
 
 /* ---------------- Outcomes ---------------- */
 function result(kind){
-  decided=true;attemptId++;clearTimers();if(rec){const r=rec;rec=null;try{r.abort()}catch{}}micBtn(false);
+  decided=true;phase='idle';attemptId++;clearTimers();if(rec){const r=rec;rec=null;try{r.abort()}catch{}}micBtn(false);
   const item=queue[pos];
   if(kind==='ok'){
     play('ok');state.total++;state.correct++;state.stars++;good++;state.misses[item]=Math.max(0,(state.misses[item]||0)-1);store();
